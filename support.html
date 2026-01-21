@@ -1,27 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>08:08 – Support</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>08:08 — App Support</title>
+    <meta name="description" content="Support page for 08:08 — The Prediction Paper" />
+    <style>
+      :root{
+        --bg:#050607;
+        --panel:#0b0d10;
+        --text:#f3f4f6;
+        --muted:#a1a1aa;
+        --muted2:#71717a;
+        --border:rgba(255,255,255,.08);
+        --shadow: 0 20px 60px rgba(0,0,0,.55);
+      }
 
-<h1>08:08 – App Support</h1>
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
+                    radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
+                    var(--bg);
+        color:var(--text);
+        line-height:1.55;
+      }
 
-<p>
-If you need help, have questions, or want to report an issue related to the
-08:08 app, you can contact us at:
-</p>
+      a{color:var(--text); text-decoration:underline; text-underline-offset:3px}
+      a:hover{opacity:.85}
 
-<p>
-📧 <a href="mailto:support@0808.app">support@0808.app</a>
-</p>
+      .wrap{
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 44px 18px 80px;
+      }
 
-<p>
-<strong>Data Source:</strong> Polymarket<br>
-<strong>Current Version:</strong> 1.0.4
-</p>
+      .top-mark{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin: 6px 0 18px;
+      }
+      .car{
+        width: 84px;
+        height: 84px;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 25px rgba(0,0,0,.6));
+        opacity: .95;
+      }
 
-</body>
+      header{
+        text-align:center;
+        margin-bottom: 28px;
+      }
+      .brand{
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: .02em;
+        margin: 8px 0 6px;
+      }
+      .subtitle{
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .doc-title{
+        margin: 18px 0 6px;
+        font-size: 34px;
+        font-weight: 800;
+      }
+      .updated{
+        color: var(--muted2);
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .card{
+        margin-top: 28px;
+        background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 26px 22px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(6px);
+      }
+
+      h2{
+        font-size: 18px;
+        letter-spacing: .02em;
+        margin: 22px 0 10px;
+      }
+      h2:first-child{margin-top:0}
+
+      p{
+        margin: 0 0 12px;
+        color: rgba(243,244,246,.92);
+      }
+
+      .lead{
+        color: rgba(243,244,246,.95);
+      }
+
+      .emph{
+        font-weight: 700;
+      }
+
+      .divider{
+        height:1px;
+        background: var(--border);
+        margin: 22px 0;
+      }
+
+      footer{
+        text-align:center;
+        color: var(--muted2);
+        margin-top: 22px;
+        font-size: 12px;
+      }
+
+      @media (max-width:480px){
+        .brand{font-size:52px}
+        .doc-title{font-size:28px}
+        .car{width:70px;height:70px}
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="top-mark">
+        <img
+          class="car"
+          src="./logo%2088%20papillion.png"
+          alt="08:08 car logo"
+        />
+      </div>
+
+      <header>
+        <div class="brand">08:08</div>
+        <div class="subtitle">The Prediction Paper</div>
+
+        <div class="doc-title">App Support</div>
+        <p class="updated">Current version: 1.0.6</p>
+      </header>
+
+      <section class="card">
+        <h2>Need help?</h2>
+        <p class="lead">
+          If you have questions, feedback, or encounter any issues while using
+          <span class="emph">08:08</span>, we’re here to help.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>Contact</h2>
+        <p>
+          You can reach support directly by email:
+        </p>
+        <p class="emph">
+          📧 <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>App Information</h2>
+        <p>
+          <strong>Data Source:</strong> Polymarket<br />
+          <strong>Version:</strong> 1.0.6
+        </p>
+      </section>
+
+      <footer>© 2026 08:08. All rights reserved.</footer>
+    </div>
+  </body>
 </html>
