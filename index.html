@@ -1,202 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>08:08 – Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>08:08 — Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for 08:08 — The Prediction Paper" />
+    <style>
+      :root{
+        --bg:#050607;
+        --panel:#0b0d10;
+        --text:#f3f4f6;
+        --muted:#a1a1aa;
+        --muted2:#71717a;
+        --border:rgba(255,255,255,.08);
+        --shadow: 0 20px 60px rgba(0,0,0,.55);
+      }
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
+                    radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
+                    var(--bg);
+        color:var(--text);
+        line-height:1.55;
+      }
 
-  <style>
-    :root {
-      --bg: #000000;
-      --fg: #ffffff;
-      --muted: #9ca3af;
-      --accent: #e5e7eb;
-      --max-width: 720px;
-    }
+      a{color:var(--text); text-decoration:underline; text-underline-offset:3px}
+      a:hover{opacity:.85}
 
-    * {
-      box-sizing: border-box;
-    }
+      .wrap{
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 44px 18px 80px;
+      }
 
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.7;
-    }
+      /* Top symbol area: REPLACES the extra 08:08 with the car logo */
+      .top-mark{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin: 6px 0 18px;
+      }
+      .car{
+        width: 84px;
+        height: 84px;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 25px rgba(0,0,0,.6));
+        opacity: .95;
+      }
 
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 96px 24px 120px;
-    }
+      header{
+        text-align:center;
+        margin-bottom: 28px;
+      }
+      .brand{
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: .02em;
+        margin: 8px 0 6px;
+      }
+      .subtitle{
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .doc-title{
+        margin: 18px 0 6px;
+        font-size: 34px;
+        font-weight: 800;
+      }
+      .updated{
+        color: var(--muted2);
+        margin: 0;
+        font-size: 14px;
+      }
 
-    header {
-      text-align: center;
-      margin-bottom: 72px;
-    }
+      .card{
+        margin-top: 28px;
+        background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 26px 22px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(6px);
+      }
 
-    header .logo {
-      font-size: 14px;
-      letter-spacing: 0.25em;
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
+      h2{
+        font-size: 18px;
+        letter-spacing: .02em;
+        margin: 22px 0 10px;
+      }
+      h2:first-child{margin-top:0}
 
-    header h1 {
-      font-size: 64px;
-      font-weight: 500;
-      margin: 0;
-    }
+      p{
+        margin: 0 0 12px;
+        color: rgba(243,244,246,.92);
+      }
 
-    header .subtitle {
-      margin-top: 12px;
-      font-size: 16px;
-      color: var(--muted);
-    }
+      .lead{
+        color: rgba(243,244,246,.95);
+      }
 
-    header .page-title {
-      margin-top: 56px;
-      font-size: 32px;
-      font-weight: 500;
-    }
+      .emph{
+        font-weight: 700;
+      }
 
-    header .updated {
-      margin-top: 8px;
-      font-size: 14px;
-      color: var(--muted);
-    }
+      .divider{
+        height:1px;
+        background: var(--border);
+        margin: 22px 0;
+      }
 
-    section {
-      margin-top: 64px;
-    }
+      footer{
+        text-align:center;
+        color: var(--muted2);
+        margin-top: 22px;
+        font-size: 12px;
+      }
 
-    h2 {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
+      /* small screens */
+      @media (max-width:480px){
+        .brand{font-size:52px}
+        .doc-title{font-size:28px}
+        .car{width:70px;height:70px}
+      }
+    </style>
+  </head>
 
-    p {
-      font-size: 16px;
-      color: var(--accent);
-      margin: 0 0 16px 0;
-    }
+  <body>
+    <div class="wrap">
+      <!-- TOP: car logo replaces the extra top 08:08 -->
+      <div class="top-mark">
+        <img
+          class="car"
+          src="./logo%2088%20papillion.png"
+          alt="08:08 car logo"
+        />
+      </div>
 
-    strong {
-      font-weight: 500;
-      color: var(--fg);
-    }
+      <header>
+        <!-- KEEP ONLY ONE 08:08 HERE -->
+        <div class="brand">08:08</div>
+        <div class="subtitle">The Prediction Paper</div>
 
-    footer {
-      margin-top: 96px;
-      font-size: 14px;
-      color: var(--muted);
-      text-align: center;
-    }
+        <div class="doc-title">Privacy Policy</div>
+        <p class="updated">Last updated: January 21, 2025</p>
+      </header>
 
-    a {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-  </style>
-</head>
+      <section class="card">
+        <h2>Introduction</h2>
+        <p class="lead">
+          Welcome to <span class="emph">08:08</span>. We are committed to protecting your privacy.
+          This Privacy Policy explains our practices regarding data collection and usage for our mobile application.
+        </p>
 
-<body>
-  <main class="container">
+        <div class="divider"></div>
 
-    <header>
-      <div class="logo">08:08</div>
-      <h1>08:08</h1>
-      <div class="subtitle">The Prediction Paper</div>
+        <h2>Information We Collect</h2>
+        <p class="emph">We do not collect any personal data.</p>
+        <p>
+          08:08 is designed with your privacy in mind. The app operates entirely on your device and does not collect,
+          store, transmit, or share any personal information or data of any kind.
+        </p>
 
-      <div class="page-title">Privacy Policy</div>
-      <div class="updated">Last updated: January 21, 2025</div>
-    </header>
+        <h2>Tracking and Analytics</h2>
+        <p class="emph">We do not track you.</p>
+        <p>
+          08:08 does not use any analytics tools, tracking technologies, cookies, or similar mechanisms.
+          Your usage of the app is completely private and not monitored in any way.
+        </p>
 
-    <section>
-      <h2>Introduction</h2>
-      <p>
-        Welcome to <strong>08:08</strong>. We are committed to protecting your privacy.
-        This Privacy Policy explains our practices regarding data collection and usage
-        for our mobile application.
-      </p>
-    </section>
+        <h2>Third-Party Services</h2>
+        <p class="emph">We do not use third-party services.</p>
+        <p>
+          08:08 does not integrate with any third-party services, advertising networks, social media platforms,
+          or external analytics providers. The app functions independently without sending data to any external servers.
+        </p>
 
-    <section>
-      <h2>Information We Collect</h2>
-      <p><strong>We do not collect any personal data.</strong></p>
-      <p>
-        08:08 operates entirely on your device and does not collect, store, transmit,
-        or share any personal information or data of any kind.
-      </p>
-    </section>
+        <h2>Account and Login</h2>
+        <p class="emph">No account is required.</p>
+        <p>
+          08:08 does not require you to create an account, log in, or provide any personal information to use the app.
+          You can use all features of the app without registration.
+        </p>
 
-    <section>
-      <h2>Tracking and Analytics</h2>
-      <p><strong>We do not track you.</strong></p>
-      <p>
-        08:08 does not use analytics tools, tracking technologies, cookies, or similar
-        mechanisms. Your usage of the app is completely private.
-      </p>
-    </section>
+        <h2>Data Storage</h2>
+        <p>
+          Any preferences or settings you configure within the app are stored locally on your device only.
+          This data never leaves your device and is not accessible to us or any third parties.
+        </p>
 
-    <section>
-      <h2>Third-Party Services</h2>
-      <p><strong>We do not use third-party services.</strong></p>
-      <p>
-        The app does not integrate with advertising networks, social platforms, or
-        external analytics providers.
-      </p>
-    </section>
+        <h2>Children’s Privacy</h2>
+        <p>
+          Since 08:08 does not collect any personal data from anyone, the app is safe for users of all ages.
+          We do not knowingly collect or solicit personal information from children.
+        </p>
 
-    <section>
-      <h2>Account and Login</h2>
-      <p><strong>No account is required.</strong></p>
-      <p>
-        You can use all features of 08:08 without registration or login.
-      </p>
-    </section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated
+          revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we protect
+          your privacy.
+        </p>
 
-    <section>
-      <h2>Data Storage</h2>
-      <p>
-        Any preferences or settings are stored locally on your device only and never
-        leave your device.
-      </p>
-    </section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy or the app, please contact us at:
+          <br />
+          Email: <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
+        </p>
+      </section>
 
-    <section>
-      <h2>Children’s Privacy</h2>
-      <p>
-        Since 08:08 does not collect personal data, it is safe for users of all ages.
-      </p>
-    </section>
-
-    <section>
-      <h2>Changes to This Privacy Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Any changes will be
-        reflected on this page.
-      </p>
-    </section>
-
-    <section>
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions, contact us at:<br />
-        <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
-      </p>
-    </section>
-
-    <footer>
-      © 2026 08:08. All rights reserved.
-    </footer>
-
-  </main>
-</body>
+      <footer>© 2026 08:08. All rights reserved.</footer>
+    </div>
+  </body>
 </html>
