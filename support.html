@@ -21,9 +21,10 @@
       body{
         margin:0;
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-        background: radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
-                    radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
-                    var(--bg);
+        background:
+          radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
+          radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
+          var(--bg);
         color:var(--text);
         line-height:1.55;
       }
@@ -37,40 +38,40 @@
         padding: 44px 18px 80px;
       }
 
+      /* Top logo */
       .top-mark{
         display:flex;
         justify-content:center;
         align-items:center;
-        margin: 6px 0 18px;
+        margin: 20px 0 28px;
       }
+
+      /* Casio logo — 4× larger */
       .car{
-        width: 84px;
-        height: 84px;
+        width: 336px;
+        height: 336px;
         object-fit: contain;
-        filter: drop-shadow(0 10px 25px rgba(0,0,0,.6));
-        opacity: .95;
+        filter: drop-shadow(0 20px 50px rgba(0,0,0,.7));
+        opacity: .98;
       }
 
       header{
         text-align:center;
         margin-bottom: 28px;
       }
-      .brand{
-        font-size: 64px;
-        font-weight: 800;
-        letter-spacing: .02em;
-        margin: 8px 0 6px;
-      }
+
       .subtitle{
         font-size: 18px;
         color: var(--muted);
         margin: 0 0 16px;
       }
+
       .doc-title{
         margin: 18px 0 6px;
         font-size: 34px;
         font-weight: 800;
       }
+
       .updated{
         color: var(--muted2);
         margin: 0;
@@ -120,28 +121,30 @@
         font-size: 12px;
       }
 
+      /* small screens */
       @media (max-width:480px){
-        .brand{font-size:52px}
+        .car{
+          width: 240px;
+          height: 240px;
+        }
         .doc-title{font-size:28px}
-        .car{width:70px;height:70px}
       }
     </style>
   </head>
 
   <body>
     <div class="wrap">
+      <!-- TOP: Casio logo only -->
       <div class="top-mark">
         <img
           class="car"
           src="./casio.png"
-          alt="08:08 car logo"
+          alt="08:08 Casio-style logo"
         />
       </div>
 
       <header>
-        <div class="brand">08:08</div>
         <div class="subtitle">The Prediction Paper</div>
-
         <div class="doc-title">App Support</div>
         <p class="updated">Current version: 1.0.0</p>
       </header>
@@ -156,9 +159,7 @@
         <div class="divider"></div>
 
         <h2>Contact</h2>
-        <p>
-          You can reach support directly by email:
-        </p>
+        <p>You can reach support directly by email:</p>
         <p class="emph">
           📧 <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
         </p>
