@@ -21,9 +21,10 @@
       body{
         margin:0;
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-        background: radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
-                    radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
-                    var(--bg);
+        background:
+          radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
+          radial-gradient(900px 500px at 10% 0%, rgba(255,255,255,.04), transparent 55%),
+          var(--bg);
         color:var(--text);
         line-height:1.55;
       }
@@ -37,41 +38,40 @@
         padding: 44px 18px 80px;
       }
 
-      /* Top symbol area: REPLACES the extra 08:08 with the car logo */
+      /* Top symbol area */
       .top-mark{
         display:flex;
         justify-content:center;
         align-items:center;
-        margin: 6px 0 18px;
+        margin: 20px 0 28px;
       }
+
+      /* Casio logo — 4× larger */
       .car{
-        width: 84px;
-        height: 84px;
+        width: 336px;
+        height: 336px;
         object-fit: contain;
-        filter: drop-shadow(0 10px 25px rgba(0,0,0,.6));
-        opacity: .95;
+        filter: drop-shadow(0 20px 50px rgba(0,0,0,.7));
+        opacity: .98;
       }
 
       header{
         text-align:center;
         margin-bottom: 28px;
       }
-      .brand{
-        font-size: 64px;
-        font-weight: 800;
-        letter-spacing: .02em;
-        margin: 8px 0 6px;
-      }
+
       .subtitle{
         font-size: 18px;
         color: var(--muted);
         margin: 0 0 16px;
       }
+
       .doc-title{
         margin: 18px 0 6px;
         font-size: 34px;
         font-weight: 800;
       }
+
       .updated{
         color: var(--muted2);
         margin: 0;
@@ -123,29 +123,28 @@
 
       /* small screens */
       @media (max-width:480px){
-        .brand{font-size:52px}
+        .car{
+          width: 240px;
+          height: 240px;
+        }
         .doc-title{font-size:28px}
-        .car{width:70px;height:70px}
       }
     </style>
   </head>
 
   <body>
     <div class="wrap">
-      <!-- TOP: car logo replaces the extra top 08:08 -->
+      <!-- TOP: Casio logo only -->
       <div class="top-mark">
         <img
           class="car"
           src="./casio.png"
-          alt="08:08 car logo"
+          alt="08:08 Casio-style logo"
         />
       </div>
 
       <header>
-        <!-- KEEP ONLY ONE 08:08 HERE -->
-        <div class="brand">08:08</div>
         <div class="subtitle">The Prediction Paper</div>
-
         <div class="doc-title">Privacy Policy</div>
         <p class="updated">Last updated: January 21, 2025</p>
       </header>
@@ -177,40 +176,34 @@
         <p class="emph">We do not use third-party services.</p>
         <p>
           08:08 does not integrate with any third-party services, advertising networks, social media platforms,
-          or external analytics providers. The app functions independently without sending data to any external servers.
+          or external analytics providers.
         </p>
 
         <h2>Account and Login</h2>
         <p class="emph">No account is required.</p>
         <p>
-          08:08 does not require you to create an account, log in, or provide any personal information to use the app.
-          You can use all features of the app without registration.
+          08:08 does not require you to create an account, log in, or provide any personal information.
         </p>
 
         <h2>Data Storage</h2>
         <p>
-          Any preferences or settings you configure within the app are stored locally on your device only.
-          This data never leaves your device and is not accessible to us or any third parties.
+          Any preferences or settings are stored locally on your device only.
         </p>
 
         <h2>Children’s Privacy</h2>
         <p>
-          Since 08:08 does not collect any personal data from anyone, the app is safe for users of all ages.
-          We do not knowingly collect or solicit personal information from children.
+          The app is safe for users of all ages and does not collect personal data.
         </p>
 
         <h2>Changes to This Privacy Policy</h2>
         <p>
-          We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated
-          revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we protect
-          your privacy.
+          We may update this Privacy Policy from time to time. Changes will be reflected on this page.
         </p>
 
         <h2>Contact Us</h2>
         <p>
-          If you have any questions or concerns about this Privacy Policy or the app, please contact us at:
-          <br />
-          Email: <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
+          Email:
+          <a href="mailto:support0808@protonmail.com">support0808@protonmail.com</a>
         </p>
       </section>
 
